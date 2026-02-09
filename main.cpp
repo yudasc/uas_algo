@@ -44,13 +44,19 @@ double hitungLuas(double r){
 
 }
 
+double hitungKelilingLingkaran(double r) {
+    const double PI = 3.14;
+    return 2 * PI * r;
+}
+
 void soal2(){
     // menghitung luas lingkaran.
     double r;
-    cout << "=== Program Hitung Luas Lingkaran ===" << endl;
+    cout << "=== Program Hitung Luas Lingkaran dan Keliling ===" << endl;
     cout << "Masukkan jari-jari lingkaran: ";
     cin >> r;
-    cout << "Hasilnya: " << hitungLuas(r);
+    cout << "Luasnya: " << hitungLuas(r) << endl;
+    cout << "Kelilingnya: " << hitungKelilingLingkaran(r);
 
 
 }
